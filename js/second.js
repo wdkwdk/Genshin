@@ -1,4 +1,4 @@
-var bgb1 = document.getElementById('bgb2');
+var bgb2 = document.getElementById('bgb2');
 var vids = document.getElementsByClassName('vid');
 var vSeconds = document.getElementsByClassName('vSecond');
 var imgDivs = document.getElementsByClassName('imgDiv');
