@@ -14,5 +14,5 @@ play0.onclick = function(){
 bgb1.onclick = function(){
     bgb1.style.display = 'none';
     v0.style.display = 'none';
-    vid0.pause();
+    vid0.play();
 }

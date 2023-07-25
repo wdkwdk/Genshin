@@ -28,6 +28,12 @@
     width: 100%;
     height: 100%;
 }
+#enterFirst a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/jrgw.png) center center /cover no-repeat;
+}
 #pz-imageFirst{
     position: absolute;
     width: 47.2%;
@@ -105,24 +111,4 @@
     height: 100%;
     background: black;
     opacity: 0.7;
-}
-.mp4{
-    display: none;
-    position: absolute;
-    width: 38%;
-    height: 58%;
-    left: 30%;
-    top: 20.35%;
-}
-#more{
-    cursor: pointer;
-    position: absolute;
-    width: 12.2%;
-    height: 5.5%;
-    left: 44%;
-    top: 85.8%;
-}
-#more img{
-    width: 100%;
-    height: 100%;
 }
