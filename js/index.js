@@ -26,7 +26,10 @@ var scrollFunc = function () {
         document.getElementById(IdNames[loction]).scrollIntoView({ behavior: 'smooth' });
         setTimeout(() => {
             flagWheel = true;
-        }, 10);
+        }, 600);
     }
 }
+document.addEventListener('mousewheel',function(e){
+    e.preventDefault();
+},{passive:false});
 window.onmousewheel = document.onmousewheel = scrollFunc;
