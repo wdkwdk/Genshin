@@ -45,14 +45,6 @@ bgb3.onclick = function () {
     bgb3.style.zIndex = '0';
 }
 
-
-
-
-
-
-
-
-
 topBtn.onclick = function () {
     if (!flagThird) { return; }
     // 显示现在选择的人物
@@ -86,7 +78,7 @@ bottomBtn.onclick = function () {
         return;
     }
     // 清空全部样式
-    changeRW()
+    changeRW();
     renwu[indexRW].style.opacity = 1;
     renwu[indexRW].style.zIndex = 100;
     flagThird = false;
@@ -97,12 +89,41 @@ bottomBtn.onclick = function () {
     boxTop += (tuHeight + xingHeight);
     boxThird.style.top = boxTop + 'px';
     // 事件超出设定的事件后做某件事情
-    setTimeout(function () { flagThird = true; }, 1000)
+    setTimeout(function () { flagThird = true; }, 1000);
 }
 function changeRW() {
     // 清空人物的样式
     for (var i = 0; i < renwu.length; i++) {
         renwu[i].style.opacity = 0;
         renwu[i].style.zIndex = 0;
+    }
+}
+var musicZ = ['海哥中', '宵宫中', '八重神子中', '齐凉凉中', '万叶中'];
+var musicR = ['海哥日', '宵宫日', '八重神子日', '齐凉凉日', '万叶日'];
+var rwyys = document.getElementsByClassName('rwyy');
+var zwyys = document.getElementsByClassName('zwyy');
+var music;
+var musicIndex = 0;
+for (var i = 0; i < zwyys.length; i++) {
+    zwyys[i].index = i;
+    rwyys[i].index = i;
+    zwyys[i].onclick = function () {
+        if(music){
+            music.currentTime = 0;
+            music.pause();
+        }
+        music = new Audio('images/mp3/' + musicZ[this.index] + (musicIndex%3+1)+'.mp3');
+        music.play();
+        musicIndex++;
+    }
+    rwyys[i].onclick = function () {
+        if(music){
+            music.currentTime = 0;
+            music.pause();
+        }
+        music = new Audio('images/mp3/' + musicR[this.index] + (musicIndex%3+1)+'.mp3');
+        music.play();
+        musicIndex++;
+
     }
 }
