@@ -1,0 +1,46 @@
+#fifth{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../images/5fifth/bg5.png) center center /cover no-repeat;
+}
+#content{
+    width: 100%;
+    height: 100%;
+}
+.box{
+    position: relative;
+    width: 45.79%;
+    height: 33.62%;
+    margin: 0 auto;
+}
+#oul{
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 52.3%;
+}
+.box ul li{
+	width:71.79%;
+	height:100%;
+	position: absolute;
+	top:50%;
+	transition: all 0.5s linear;
+}
+.box ul .show2{
+	width:89.88%;
+	top:-5%;
+	left:3.5%;
+	z-index: 99;
+}
+.show2 img{width:100%;}
+.box ul .show1,.box ul .show3{
+	width:65.12%;
+	top:17%;
+	z-index: 88;
+	filter:blur(2px);	
+}
+.show1 img,.show3 img{width:100%;}
+.box ul .show1{left:-22.37%;}
+.box ul .show3{left:54.11%;}

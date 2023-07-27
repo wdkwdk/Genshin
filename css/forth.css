@@ -1,0 +1,58 @@
+#forth{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../images/4fourth/bg4.png) center center /cover no-repeat;
+}
+.llt{
+    cursor: pointer;
+    position: absolute;
+    width: 19.2%;
+    height: 52.1%;
+    left: 26.1%;
+    top: 31%;
+}
+.llt img{
+    width: 100%;
+    height: 100%;
+}
+.jies{
+    cursor: pointer;
+    position: absolute;
+    width: 26%;
+    height: 18%;
+    left: 45.7%;
+    top: 37%;
+    z-index: 1;
+}
+.jies img{
+    width: 100%;
+    height: 100%;
+}
+.xtu{
+    width: 6.2%;
+    height: 13.2%;
+    position: absolute;
+    z-index: 1;
+    top: 58.3%;
+    cursor: pointer;
+}
+#tu1{left: 46%;}
+#tu2{left: 53%;}
+#tu3{left: 59.4%;}
+#tu4{left: 65.8%;}
+#tu1:hover{
+    content: url(../images/4fourth/tx1hover.png);
+}
+#tu2:hover{
+    content: url(../images/4fourth/tx2hover.png);
+}
+
+#tu3:hover{
+    content: url(../images/4fourth/tx3hover.png);
+}
+
+#tu4:hover{
+    content: url(../images/4fourth/tx4hover.png);
+}
+

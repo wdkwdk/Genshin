@@ -4,7 +4,7 @@ setInterval(function () {
     body.style.height = window.innerHeight + 'px';
 }, 1)
 var loction = 0;
-var IdNames = ['first', 'second', 'third']
+var IdNames = ['first', 'second', 'third','forth','fifth']
 var flagWheel = true;
 var scrollFunc = function () {
     if (!flagWheel) { return; }
